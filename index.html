@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Agrawal</title>
+    <link rel="stylesheet" href="css/light-theme.css" id="theme-link">
+    <link rel="icon" href="images/favicon.ico?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-container">
+      <img src="images/sun.png" alt="sun-img" class="sun-img">
+      <img src="images/moon.png" alt="moon-img" class="moon-img">
+      <button class="btn-toggle" style="font-family: Montserrat;">Toggle Dark-Mode</button>
+      <img src="images/cloud.png" alt="cloud-image" class="topcloud">
+      <h1 class="name" style="margin-bottom: 0;">I'm Yash!!</h1>
+      <h2 style="margin-top: 0;" class="top-line">a <span class="pro">pro</span>grammer.</h2>
+      <img src="images/cloud.png" alt="cloud-image" class="midcloud">
+      <img src="images/mountain.png" alt="mountain-image">
+      <img src="images/cloud.png" alt="cloud-image" class="bottomcloud">
+    </div>
+    <div class="middle-container">
+        <div class="profile">
+          <img src="images/Main-profile.jpg" alt="Main-profile" class="main-profile">
+          <h2>Hola peeps!</h2>
+          <p class="intro">I'm a <span class="cse">Computer Science</span>💻  undergrad student in <a href="https://iitbhu.ac.in/" target="_blank">IIT(BHU) Varanasi</a> .
+          My hobbies include absolutely nothing but yeah.. I am a cinephile.</p>
+        </div>
+        <hr>
+        <div class="skills">
+          <h1 style="font-family: Montserrat;">My Skills.</h1>
+          <img class="skillsImage" src="https://media4.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="">
+          <p>There are only handful of them... I'm improving them though..😇</p>
+          
+          <br><br><br>
+          <div class="skill-row">
+            <img class="cp-img" src="images/code-forces.png" alt="cp-img">
+            <h3 class="skill-heading">Competitive Programming</h3>
+            <p class="skill-para">Still a <span style="color: grey;">newbie</span> on <a href="https://codeforces.com/" target="_blank">CodeForces</a> <img src="images/code-forces.png" alt="cf-logo" class="cf-img">... but, the Journey is on!! Started it from Jan'22. My preferred language in CP is: C++</p>
+          </div>
+          <div class="skill-row">
+            <img class="web-dev" src="images/programming.png" alt="web-dev-img">
+            <h3 class="skill-heading">Web Devolopment</h3>
+            <p class="skill-para">This is my first Website!! It consists of HTML and CSS only. It is made as a part of learning exercise..  Do give me a <a href="mailto:yashagrawal5094@gmail.com" target="_blank">feedback</a>!!✌️</p>
+          </div>
+          <div class="skill-row">
+            <img class="infosec" src="images/hacker.png" alt="hacker-img">
+            <h3 class="skill-heading">Cyber Security</h3>
+            <p class="skill-para">A Little Experience of 2 CTFs!! All of this field looks pretty interesting to me.. , but found <a href="https://bit.ly/3HTUgCt" target="_blank">this</a> as something really cool!!😎</p>
+          </div>
+        </div>
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>If you are a cinephile or a marvel fan!</h3>
+          <p class="contact-message">Love them as much as I do? Let's discuss about them.. We can build some theories..🌚🌚</p>
+          <br>
+          <a class="btn" href="mailto:yashagrawal5094@gmail.com" target="_blank">CONTACT ME</a>
+        </div>
+      </div>
+            
+      <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/yash-agrawal-889774229/" target="_blank">LinkedIn <img src="images/linkedin.png" alt="linkedin-logo" class="linkedin-logo"></a>
+        <a class="footer-link" href="https://github.com/yash6318" target="_blank">GitHub <img src="images/github.png" alt="github-icon" class="github-logo"></a>
+        <a class="footer-link" href="https://codeforces.com/profile/silentcoder6318" target="_blank">CodeForces <img src="images/code-forces.png" alt="cf-img" class="cf-img"></a>
+        <p class="copyright">© Yash Agrawal</p>
+      </div>
+      <script>
+        const btn = document.querySelector(".btn-toggle");
+        const theme = document.querySelector("#theme-link");
+        btn.addEventListener("click", function() {
+          if (theme.getAttribute("href") == "css/light-theme.css") {
+            theme.href = "css/dark-theme.css";
+          } else {
+            theme.href = "css/light-theme.css";
+          }
+        });
+      </script>
+    
+</body>
+</html>
