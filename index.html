@@ -73,6 +73,14 @@
         const btn = document.querySelector(".btn-toggle");
         const theme = document.querySelector("#theme-link");
         btn.addEventListener("click", function() {
+          if(document.querySelector(".btn-toggle").innerHTML==="Toggle Dark-Mode"){
+            document.querySelector(".btn-toggle").innerHTML="Toggle Light-Mode";
+          }
+          else{
+            document.querySelector(".btn-toggle").innerHTML="Toggle Dark-Mode";
+          }
+        });
+        btn.addEventListener("click", function() {
           if (theme.getAttribute("href") == "css/light-theme.css") {
             theme.href = "css/dark-theme.css";
           } else {
